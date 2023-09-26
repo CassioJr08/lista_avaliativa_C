@@ -5,7 +5,7 @@ int main(){
     int soma = 0;
     scanf("%d", &numero);
 
-    int variavel_simbolica = numero;
+    int armazena_numero_atual = numero;
 
     if(numero % 2 == 0){
         printf("%d eh par\n", numero);
@@ -14,17 +14,12 @@ int main(){
     }
 
     while (numero > 0) {
-        // Obtém o último dígito do número
         int digito = numero % 10;
-        
-        // Adiciona o dígito à soma
         soma += digito;
-        
-        // Remove o último dígito do número
         numero /= 10;
     }
 
-    printf("A soma dos algarismos de %d eh %d\n", variavel_simbolica, soma);
+    printf("A soma dos algarismos de %d eh %d\n", armazena_numero_atual, soma);
 
 
     return 0;

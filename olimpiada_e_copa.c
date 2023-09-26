@@ -8,26 +8,26 @@ int main() {
     
     scanf("%d", &ano);
 
-    int inicializadorOlimpiadas = 0;
-    int inicializadorCopa = 0;
+    int condicionalOlimpiadas = 0;
+    int condicionalCopa = 0;
 
     for(int i = 0; i < 29; i++){
 
         if(ano == jogos_olimpicos[i]){
             printf("Os Jogos Olimpicos de Verao ocorreram no ano de %d.\n", ano);
-            inicializadorOlimpiadas = 1;
+            condicionalOlimpiadas = 1;
         }
     }
 
     for(int i = 0; i < 22; i++){
         if(ano == copa_do_mundo[i]){
             printf("A Copa do Mundo de Futebol ocorreu no ano de %d.\n", ano);
-            inicializadorCopa = 1;
+            condicionalCopa = 1;
         }
 
     }
 
-    if (inicializadorCopa == 0 && inicializadorOlimpiadas == 0){
+    if (condicionalCopa == 0 && condicionalOlimpiadas == 0){
         printf("Nao houve Jogos Olimpicos de Verao ou Copa do Mundo no ano de %d.\n", ano);
     }
 
